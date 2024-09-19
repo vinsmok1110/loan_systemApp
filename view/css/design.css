@@ -1,0 +1,491 @@
+*{box-sizing: border-box;}
+.body{
+    font-family: "Open Sans", sans-serif;
+    color: #ccbbbb;
+    width: 100%;
+    height: calc(100%);
+    margin: 0;
+   
+}
+.invalid-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px; /* Adjusted width */
+    height: 15vh;
+}
+     /* header styling */
+.header{  position: fixed;
+    top: 0;
+    right: 0;
+    left: 250px;
+    z-index: 1030;   background-color: #7d2ae8;     width: 100%;}
+    
+.headerContainer{display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;}
+.hColumn{position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;}
+.logoContainer{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;;
+}
+.logo {
+    margin: auto;
+    font-size: 20px;
+    background: white;
+    padding: 7px 11px;
+    border-radius: 50% 50%;
+    color: #000000b3;display: flex;float: left
+}
+.logoName{ width: 400px; /* Adjust the width as per your requirements */
+    float: left;
+    color: white;;
+    padding-left: 15px;}
+.profile{width: 200px; /* Adjust the width as per your requirements */
+    float: right;
+    color: white;position: relative;
+    padding-right: 15px;
+    padding-left: 15px;}
+.profile img{  width: 40px; /* Adjust the width of the image as per your requirements */
+    height: auto;}
+
+    .student { background-color: #ccc; }
+    .teacher { background-color: aquamarine; }
+    .subject { background-color: rgb(56, 139, 139);}
+    .section { background-color: chartreuse;  }
+    .row_content {
+      flex-basis: 20%;
+      padding: 10px;
+      
+  }
+  @media (min-width: 768px) {
+    .row_content {
+        flex-basis: 25%;
+    }
+}
+
+.rowtable{
+    display: flex;
+    margin-left: 3.25rem;
+    margin-right: 3.25rem;
+    margin-top: 3.25rem;
+    gap: 20px; 
+    
+}
+.row_content {
+    height: 200px;
+    padding: 20px;
+    background: linear-gradient(100deg, #e0eafc, #cfdef3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+     /* sidebar styling */
+.sidebar{min-height: 100vh;
+    width: 250px;
+    padding: 6px 14px;
+    background-color: #004f83;
+    position: fixed;
+    top:0px;
+    left: 0;
+    }
+    .sidebarIcons{display: flex;align-items: center;margin-bottom: 12px; color: white;font-size: 20px; }
+
+    .sidebar ul{margin-top: 50px; margin-top: 150px;}
+    
+    .sidebar li {
+        position: relative;
+        margin: 20px 0;
+        list-style: none;
+    }
+    .sidebar a{text-decoration: none;color: inherit;}
+    .icon{margin-right: 8px; /* Assuming Tailwind's spacing scale maps 2 to 8px */color: white;
+    }
+    .sidebarIcons:hover {
+        color: #fffafa;
+        pointer-events: auto;
+        background-color: #ffffff60;
+}
+
+.container {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    margin-top: 56px;
+    padding: 8px;
+    display: block;
+}
+
+.content {
+    margin-left: 85px;
+    width: calc(100% - 250px);
+    margin-top: 56px;
+    padding: 8px;
+    display: block;
+    
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* h1, h2 {
+    color: #333;
+} */
+
+p {
+    margin-bottom: 5px;
+}
+    /* home styling */
+    .mainContent{margin-left: 250px;
+        width: calc(100% - 250px);
+        margin-top: 56px; 
+        padding: 8px;    display: block;}
+    .row{display: flex;
+       
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;}
+    .row1{ display: flex;flex-wrap: wrap;margin-top: 15px;}
+    .rowCol{position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .cardsColumn{position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;padding-top: 50px;
+    }
+    .card{
+        background-color: #f8f9fa;
+        border: 2px solid rgba(0, 0, 0, .125);
+        border-radius: 10px;}
+    .cardBody{ padding: 20px; }
+    .card>hr {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    hr{margin-top: 2px;
+        margin-bottom: 2px;
+        border: 1px solid rgba(0, 0, 0, .1);;
+        }
+    .colCard{flex: 0 0 25%;
+        max-width: 25%;position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;}
+    .payments{display: flex;
+        justify-content: space-between; /* Distributes space between items */
+        align-items: center; }
+    .text{color: white;font-size: 16px;}
+    .totalPayment{font-size: 18px;font-weight: bold;} 
+    .cardFooter{display: flex;align-items: center; justify-content: space-between;padding: 12px 20px; 
+        background-color: rgba(0, 0, 0, 0.03); 
+        border-top: 1px solid rgba(0, 0, 0, 0.125);}
+    .view{font-size: 12px; color: #ffffff; position: relative;
+        width: 100%;content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;}
+    .right{text-align: center;}
+    .right img{
+        font-size: inherit;
+        height: 18px;
+        margin-top: 11px;
+       }
+    .card1{position: relative;    
+        margin-bottom: 15px;
+        padding: 0px 15px;
+            display: flex;
+            color: white;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #7d2ae8;;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.301);
+            border-radius: 10px;}
+            .card2{
+                background-color: #f8f9fa;
+                border: 2px solid rgba(0, 0, 0, .125);
+                border-radius: 10px;width: 1573px;}          
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .table th,
+    .table td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+    
+    .table th {
+        background-color: #f2f2f2;
+    }
+    
+    .table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+    .table tbody tr:hover {
+        background-color: #ddd;
+    }
+    
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+    hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+    }
+
+
+/* Styles for the loan form container */
+.loan-form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.loan-form {
+    text-align: center;
+}
+
+.loan-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.loan-form input[type="number"],
+.loan-form input[type="submit"],
+.loan-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.loan-form input[type="submit"] {
+    background-color: #7d2ae8;
+    color: white;
+    cursor: pointer;
+}
+
+.loan-form input[type="submit"]:hover,
+.loan-form button:hover {
+    background-color: #7d2ae8;
+}
+/* Styles for the "Apply for a Loan" button */
+#openLoanForm {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7d2ae8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#openLoanForm:hover {
+    background-color: #004f83;
+}
+/* .cardsColumn{position: relative;
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 323px;padding-top: 100px;
+}
+.card{
+    background-color: #f8f9fa;
+    border: 2px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;}
+.cardBody{ padding: 20px; }
+.card>hr {
+    margin-right: 0;
+    margin-left: 0;
+}
+hr{margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid rgba(0, 0, 0, .1);;
+    }
+.colCard{flex: 0 0 25%;
+    max-width: 25%;position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;} */
+.payments{display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; }
+.text{color: white;font-size: 16px;}
+.totalPayment{font-size: 18px;font-weight: bold;} 
+.cardFooter{display: flex;align-items: center; justify-content: space-between;padding: 12px 20px; 
+    background-color: rgba(0, 0, 0, 0.03); 
+    border-top: 1px solid rgba(0, 0, 0, 0.125);}
+.view{font-size: 12px; color: #ffffff; position: relative;
+    width: 100%;content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;}
+.right{text-align: center;}
+.right img{
+    font-size: inherit;
+    height: 18px;
+    margin-top: 11px;
+   }
+
+
+    /* loan styling */
+.cardHeader{ padding: 12px 20px;background-color: rgba(0, 0, 0, .03);
+    border-bottom: 1px solid rgba(0, 0, 0, .125)}
+.card-body{flex: 1 1 auto;
+    min-height: 1px;
+    padding: 20px;}
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Define alternating row colors */
+.even {
+    background-color: #f2f2f2;
+}
+
+.odd {
+    background-color: #ffffff; /* or any color you prefer */
+}
+.mainContent {
+    overflow-x: auto;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+}
+.table th {
+    background-color: #f2f2f2;
+}
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd;
+}
+@media screen and (max-width: 600px) {
+    .table thead {
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+    .table tr {
+        margin-bottom: 15px;
+    }
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+

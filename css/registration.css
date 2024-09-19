@@ -1,0 +1,143 @@
+/* registration.css */
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../view/img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.register-container {
+    color: #fff;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    background: transparent;
+    border: 2px solid rgb(15 14 14 / 20%);
+    backdrop-filter: blur(100px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+    margin-top: 40px;
+}
+
+.acctype {
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.page label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.page input[type="text"],
+.page input[type="password"],
+.page input[type="date"],
+.page select,
+.page input[type="file"] {
+    width: 300px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.page select {
+    width: 308px; /* Adjusted for select's arrow button */
+}
+
+.page input[type="file"] {
+    width: calc(300px - 34px); /* Adjusted for file input's button */
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+/* Hide page by default except the first page */
+.page:not(:first-child) {
+    display: none;
+}
+header {
+    position: fixed;
+    background: transparent;
+    border: 2px solid rgb(15 14 14 / 20%);
+    backdrop-filter: blur(100px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+ 
+}
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+.nav, .nav_item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.nav_logo, .nav_link {
+    color: #fff;
+}
+.nav_logo {
+    font-size: 25px;
+}
+.nav_logo {
+    font-size: 25px;
+}
